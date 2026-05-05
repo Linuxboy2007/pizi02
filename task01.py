@@ -1,7 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 27 08:43:15 2026
+def main():
+    print("Введите размеры матрицы n и m:")
+    n = int(input("n = "))
+    m = int(input("m = "))
 
-@author: linux
-"""
-#import numpy as np
+    if n != m:
+        print("Матрица должна быть квадратной! n должно равняться m")
+        return
+
