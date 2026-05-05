@@ -1,3 +1,4 @@
+# 
 def multiply_matrices(A, B):
     n = len(A)
     C = [[0] * n for _ in range(n)]
