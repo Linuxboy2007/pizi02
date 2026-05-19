@@ -22,7 +22,7 @@ for i in range(1, n):
 print(f"\nМаксимальный диагональный элемент по модулю: {max_diag}")
 
 for i in range(n):
-    for j in range(0, n, 2):  # только нечетные столбцы (1,3,5... в терминах пользователя)
+    for j in range(0, n, 2): 
         a[i][j] = a[i][j] / max_diag
       
 print("\nРезультат:")
