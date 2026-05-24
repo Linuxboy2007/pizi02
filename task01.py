@@ -1,9 +1,39 @@
-def main():
-    print("Введите размеры матрицы n и m:")
-    n = int(input("n = "))
-    m = int(input("m = "))
+# -*- coding: utf-8 -*-
+# Ашуркова Карина Владиславовна ПИЗИ23о2
+# В данной действительной матрице размером n*m поменять местами строку, содержащую элемент с наибольшим значением, со строкой, содержащей элемент с наименьшим значением. Предполагается, что эти элементы единственны
+def find rows (a):
+    max_el = a[0][0] 
+    min_el = a[0][0] 
+    max row = 0
+    min_row = 0
+   
+    for i in range (len (a)):
+        for j in range (len (a[i])):
+            if a[i][j] > max_el: 
+                max_el a[i][j]
+                max row = i
+            
+            if a[i][j] <min_el: 
+                min_el = a[i][j] 
+                min_row=i
+    return max_row, min_row
 
-    if n != m:
-        print("Матрица должна быть квадратной! n должно равняться m")
-        return
+n = int(input("Введите количество строк: "))
+m = int(input("Введите количество столбцов: ")) 
 
+a = [ ]
+
+print("Введите элементы матрицы:")
+
+for i in range (n):
+    row = list (map (float, input().split())) 
+    a.append(row)
+
+i, j = find_rows (a)
+
+a[i], a[j] = a[j], a[i] 
+
+print("Матрица после обмена строк:")
+
+for row in a:
+    print (*row)
