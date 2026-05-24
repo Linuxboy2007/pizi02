@@ -30,4 +30,3 @@ for i in range(n):
 print("Результирующая матрица:")
 for row in C:
     print(row)
-
