@@ -34,7 +34,7 @@ if __name__ == "__main__":
             print(" ".join(f"{x:8.2f}" for x in row))
 
         replace_max_in_rows(matrix)
-
+ 
         print("\nМатрица после замены ")
         for row in matrix:
             print(" ".join(f"{x:8.2f}" for x in row))
